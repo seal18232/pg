@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>the guitar code</title>
+        <link rel="icon" href="logopag.ico">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+        <style>
+            body {
+                background: url("fondo2.png") no-repeat center fixed;
+                background-size: cover;
+                }
+            #logo-container {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                }   
+            #logo-container>img {
+                max-width: 50%;
+                border: 2px solid red;
+                }
+            * {
+                box-sizing:border-box;
+            }
+            .leftT {
+                background-color:#697c86;
+                padding:20px;
+                float:left;
+                width:20%; 
+                }
+            .mainN {
+                background-color:#646664;
+                padding:20px;
+                float:left;
+                width:60%; 
+                }
+            .rightT {
+                background-color:#697c86;
+                padding:20px;
+                float:left;
+                width:20%; 
+                }
+            @media screen and (max-width:800px) {
+            .left, .main, .right {
+                width:100%; 
+                }
+            }
+            * {
+                 box-sizing: border-box;
+            }
+            .menu {
+                float:left;
+                width:15%;
+                text-align:center;
+            }
+            .menu a {
+                background-color:#697c86;
+                padding:8px;
+                margin-top:7px;
+                display:block;
+                width:100%;
+                color:black;
+            }
+            .main {
+                float:left;
+                width:70%;
+                padding:0 20px;
+            }
+            .right {
+                background-color:#697c86;
+                float:left;
+                width:15%;
+                padding:15px;
+                margin-top:7px;
+                text-align:center;
+            }    
+        </style>
+    </head>
+    <body>
+        <div id="logo-container">
+            <img id="imagel" src="fondo_1.png" >  
+        </div>
+        <div class="leftT">
+            <p>IBANEZ , GIBSON</p>
+          </div>
+          
+          <div class="mainN">
+            <p>Dentro de nuestra pagina comentaremos un poco de historia en la musica
+               y sus principales fabricantes. 
+            </p>
+          </div>
+          
+          <div class="rightT">
+            <p>FENDER G&L</p>
+          </div>
+          <div id="demo" class="carousel slide" data-ride="carousel">
+            <ul class="carousel-indicators">
+              <li data-target="#demo" data-slide-to="0" class="active"></li>
+              <li data-target="#demo" data-slide-to="1"></li>
+              <li data-target="#demo" data-slide-to="2"></li>
+              <li data-target="#demo" data-slide-to="3"></li>
+              <li data-target="#demo" data-slide-to="4"></li>
+              <li data-target="#demo" data-slide-to="5"></li>
+            </ul>      
+            <div class="carousel-inner">
+              <div class="carousel-item active">       >
+                <img src="acdc.png" width="100%" height="660px"  alt="acdc">
+                <div class="carousel-caption">
+                 <h1 style="color:#ADADB2 ">Angus Young</h1>
+                 <p style="color:#ADADB2 ">Guitarrista de AC/DC luciendo una sg by Gibson</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="bruce.png" width="100%" height="660px" alt="bruce">
+                <div class="carousel-caption">
+                 <h1 style="color:#ADADB2 ">Bruce Springsteen</h1>
+                 <p style="color:#ADADB2 ">Bruce "The Boss" Springsteen  y su clasica Telecaster by Fender</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="jimmy.png" width="100%" height="660px" alt="jimmy">
+                <div class="carousel-caption">
+                 <h1 style="color:#ADADB2 ">Jimmy Hendrix</h1>
+                 <p style="color:#ADADB2 ">Jimmy en Live At The Royal Albert Hall con su Flamante Stratocaster by Fender</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="joe.png" width="100%" height="660px" alt="joe">
+                <div class="carousel-caption">
+                 <h1 style="color:#ADADB2">Joe Satriani</h1>
+                 <p style="color:#ADADB2">Joe "sacth" Satriani y su Superstrar by Ibanez</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="metalica.png" width="100%" height="660px" alt="metalica">
+                <div class="carousel-caption">
+                 <h1 style="color:#ADADB2">James Alan Hetfield</h1>
+                 <p style="color:#ADADB2">Guitarrista de Metallica con una Les Paul Custom by Gibson</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="slash.png" width="100%" height="660px" alt="slash">
+                <div class="carousel-caption">
+                 <h1 style="color:#ADADB2">Saul Hudson</h1>
+                 <p style="color:#ADADB2">Guitarrista de Guns N' Roses "Slash" y su Les Paul Signature by Gibson</p>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </a>
+          </div>  
+        <div>
+            <audio controls>
+                <source src="js.mp3" type="audio/mp3">
+            </audio>
+        </div>
+        <div style="overflow:auto">
+            <div class="menu">
+              <a href="https://www.ibanez.com/na/">Ibanez</a>
+              <a href="https://www.gibson.com/">Gibson</a>
+              <a href="https://shop.fender.com/es/intl/start">Fender</a>
+              <a href="https://www.music-man.com/">Music man</a>
+            </div>
+          
+            <div class="main">
+                <section id="wrapper">
+                    <section class="main">  
+                          <article style="color:#FFFFFF ">
+                                <div>
+                                   <img src="fender4.png" class="rounded-circle" width="200" alt="fender4">
+                                </div>
+                                <h1 style="color:#ADADB2 "><strong>Fender</strong></h1>
+ 
+                                <p>
+                                Fender Musical Instruments Corporation, inicialmente llamada Fender Electric Instrument Manufacturing Company, 
+                                fue fundada por Leo Fender en la década de 1940, siendo una de las más conocidas empresas fabricantes de guitarras 
+                                y bajos eléctricos.
+                                </p>
+                                <p>
+                                Fender es particularmente conocida por llevar las guitarras eléctricas de cuerpo macizo a las masas. 
+                                Fender creó la primera guitarra eléctrica de cuerpo sólido de venta masiva, la Telecaster (originalmente
+                                llamada Broadcaster; Esquire es el modelo original con una sola pastilla), el primer bajo de producción masiva,
+                                el Precision Bass o P-Bass, y la mundialmente conocida Stratocaster o Strat.
+                                </p>
+                                <p>
+                                La compañía comenzó con el nombre de Fenders Radio Service en 1938, en Fullerton, California. 
+                                Como técnico calificado en electrónica, Leo Fender era contratado no sólo para reparar radios, 
+                                sino también fonolas, sistemas de audio particulares y amplificadores. Como fruto de su trabajo, 
+                                Fender se intrigó por los pequeños fallos en los amplificadores de esa época y comenzó a construir sus propios
+                                modelos y a modificar los ya existentes.
+                                </p>
+                                <p>
+                                </p> 
+                                <div>
+                                  <img src="strato.png" class="float-right" width="150">
+                                </div>   
+                                <p>
+                                A comienzos de la década de 1940 se unió a otro entusiasta de la electrónica, Clayton Orr Kauffman, 
+                                creando una compañía llamada 'K y F Manufacturing Corp.' para diseñar, fabricar y vender sus propios
+                                instrumentos musicales y amplificadores. 
+                                La producción comenzó en 1945, construyendo guitarras Lap Steel hawaianas (con un modelo de pastilla patentada) 
+                                y amplificadores. Antes de fin de año Fender se convenció de que era más provechoso fabricar que reparar guitarras 
+                                eléctricas, y se dedicó completamente a esta labor. Kauffman no se mostraba muy convencido de esta decisión y a 
+                                comienzos de 1946 ambos decidieron amistosamente seguir sus respectivos caminos. 
+                                Leo decidió entonces renombrar a la empresa 'Fender Electric Instrument Company'. 
+                                La tienda de reparación siguió abierta hasta 1951, aunque Fender no atendía personalmente desde 1947.
+                                </p>
+                                <p>
+                                En 1965, a Leo Fender se le diagnosticó una enfermedad grave y se le pronosticó, erróneamente, un escaso tiempo vida.
+                                Leo decidió vender entonces su compañía a la Columbia Broadcasting System o CBS.
+                                </p>
+                                <p>
+                                La venta de Fender a CBS tiene varias implicaciones de gran importancia. La venta a CBS fue vista en su momento 
+                                como un hecho positivo, pues esta empresa podía proveer de dinero y empleados a Fender. 
+                                Sin embargo, ahora se ve como un hecho desfavorable, porque se piensa que CBS sobrepuso la cantidad a la calidad.
+                                El culmen de esta tendencia se vio en 1983, cuando CBS realizó unos reajustes desfavorables al modelo 
+                                Stratocaster, quitándose el segundo control de tono. Además, otros modelos previos, como el Swinger 
+                                (modelo de gama baja que puede estar compuesto por varias partes encoladas, a diferencia de la 
+                                Stratocaster normal, que es una guitarra de cuerpo macizo, obtenido a partir de una sola pieza de madera,
+                                aunque en las dos el mástil va unido mediante atornillado) y el Custom (uno de los modelos en el que se 
+                                recurre al encolado), resultaron únicamente intentos de conseguir ganancias extra.
+                                </p>
+                                <p>
+                                Se optó por tiempos de secado más cortos para las maderas empleadas en los cuerpos de los instrumentos y 
+                                éstos los formaban varias piezas encoladas en lugar de una sola, lo que repercutía no sólo en el timbre y 
+                                la estabilidad de la guitarra, sino también en su peso, que era mucho mayor, haciéndolas incómodas.
+                                </p>
+                                <p>
+                                La compañía dejó de emplear pastillas de fabricación propia, optando por modelos baratos y de inferior calidad,
+                                lo cual también es aplicable a otras piezas. 
+                                Los puentes, que antes se fabricaban con acero o bronce prensado (lo cual prestaba mayor sonoridad y 
+                                solidez al instrumento), pasaron a construirse con aleaciones más maleables, y, por tanto, menos resistentes al desgaste.
+                                Es muy común encontrarse instrumentos de esta época en los que muchas partes no son originales, 
+                                ya que éstas los hacían "intocables". Fue precisamente en la década de 1970 cuando surgió una gran 
+                                industria de recambios para guitarras eléctricas, como Warmoth, Schaller o Gotoh.
+                                </p>
+                                <p>
+                                Debido a situaciones como éstas se generó un culto al 'Pre-CBS', buscando los modelos fabricados antes
+                                de la compra de la empresa. Esta respondió ofreciendo diseños que trataban de imitar las características
+                                propias de guitarras de la competencia, como es el caso de la Telecaster Deluxe, que buscaba un hueco en
+                                el sector de mercado de Gibson con sus pastillas dobles, y, en ciertos modelos, cuerpos huecos. 
+                                Todo ello no hizo, en realidad, sino diluir los rasgos más evidentes y renombrados de la marca, 
+                                devaluándola en gran medida.
+                                </p>
+                                <p>
+                                Después de la venta de Fender y tras evidenciarse el error del pronóstico sobre su salud, 
+                                Leo Fender diseñó productos para Music Man, para fundar más tarde G&L company junto a 
+                                George Fullerton, dedicada a la fabricación de guitarras y bajos de su creación.
+                                </p>
+                                <p>
+                                En 1985, por iniciativa de un empleado de la fábrica, Fender Electric Instrument Manufacturing Company fue 
+                                comprada a la CBS por sus propios trabajadores y renombrada como 'Fender Musical Instrument Corporation'.
+                                </p>
+                                <div>
+                                  <img src="tele1.png" class="float-right" width="160" alt="tele1">
+                                </div>
+                                <p>
+                                La Fender Musical Instruments Corporation ha continuado creciendo, agregando nuevos productos a su catálogo
+                                y conservando los diseños originales de los comienzos de la compañía. En 1987 abrieron una nueva fábrica en 
+                                la ciudad de Ensenada (Baja California) debido al favorable clima y la mano de obra de buena calidad a bajo costo.
+                                </p>
+                                <P>
+                                Fender fabrica sus modelos de más alta calidad en Estados Unidos, México y Japón, pero también tiene extensas 
+                                instalaciones de fabricación en China e Indonesia para los modelos de menor calidad, de tal manera que hoy en 
+                                día se puede comprar una Fender Stratocaster al mismo precio en dólares que en 1954. 
+                                Los modelos más antiguos y los construidos en Estados Unidos son los más buscados, pero los japoneses también 
+                                son muy apreciados. Debido a esto, las Fender construidas en Ensenada, México, reemplazan en el 
+                                mercado americano a las japonesas y las Fender construidas en Japón se distribuyen únicamente dentro de este 
+                                país, siendo muy pocas exportadas.
+                                </p>
+                                <P>
+                                La marca Squier (una fábrica de cuerdas comprada por Fender) se encarga de las guitarras de estudio 
+                                desde la década de 1980. El nombre reúne a las guitarras de menor precio, con diseños originales 
+                                de Fender, pero de construcción más barata. 
+                                Estos modelos de menor coste son fabricados en China e Indonesia, pero eran originalmente fabricadas en Corea y Japón.
+                                </p>
+                                <P>
+                                Los antiguos modelos japoneses de Fender y Squier Stratocaster son muy apreciados y se venden en 
+                                el mercado de los usados como JV o 'Japanese Vintage'.
+                                </p>
+                                <P>
+                                La base de su línea de instrumentos, conformada por la Tele, la Strat, el P-Bass y el J-Bass, permanece 
+                                sin cambios con respecto a los modelos de la década de 1950. 
+                                En cualquier género musical, ya sea rock, pop, blues o country, es muy probable que se vea una guitarra 
+                                o bajo Fender amplificado por un amplificador de la misma marca. 
+                                Las guitarras Fender son o han sido utilizadas por un gran número de artistas conocidos, 
+                                entre los que destacan Buddy Holly, Jimi Hendrix, Ritchie Blackmore, Keith Richards, David Gilmour, 
+                                Eric Clapton, George Harrison, Paul Mccartney, Jimmy Page, Jeff Beck, John Lennon, Pete Townshend, 
+                                Stevie Ray Vaughan, Yngwie Malmsteen, Deryck Whibley, John Frusciante o Kurt Cobain, entre otros.
+                                </p>
+                                <P>
+                                Asimismo, Fender fabrica guitarras acústicas y guitarras electroacústicas como las Stratacoustic y Telecoustic,
+                                basadas en sus diseños clásicos Stratocaster y Telecaster respectivamente, usando nuevos materiales como la fibra de carbono.
+                                Además lanzó reediciones de pedales de efectos fabricados entre la década de 1960 y 1970, impulsados por la alta 
+                                demanda que los modelos originales tenían y la dificultad para conseguirlos debido a su rareza. 
+                                También ha comprado distintas empresas de guitarras como Gretsch, Guild, Hamer, Jackson, Charvel, 
+                                Tacoma y otras marcas como la SWR de amplificadores para bajos.
+                                </p>
+                                 <div>
+                          </article>
+                          <article style="color:#FFFFFF ">                          
+                                <div>
+                                   <img src="gibson4.png" class="rounded-circle" width="200" alt="gibson4">
+                                </div>
+                                <h2 style="color:#ADADB2 "><strong>Gibson</strong></h2>
+                                <p> 
+                                Gibson Brands es una de las empresas más grandes de fabricación de guitarras. 
+                                Fue fundada en 1894 por Orville Gibson en la ciudad de Kalamazoo, Míchigan, Estados Unidos. 
+                                Actualmente su sede se encuentra en Nashville, Tennessee.
+                                </p>
+                                <div>
+                                   <img src="lesp.png" class="float-right" width="150">
+                                </div>
+                                <P>                               
+                                En 1902, la Gibson Mandolin-Guitar Mfg. Co, Ltd. fue fundada para comercializar estos instrumentos.
+                                Al poco tiempo de que la compañía iniciara sus actividades, la directiva presentó una moción para que a Orville H.
+                                Gibson se le pagara solamente por el tiempo en que trabajara para la compañía. Desde entonces, no queda claro 
+                                si trabajaba allí a tiempo completo o como consultor. Gibson era considerado un tanto excéntrico y se dudaba 
+                                con el paso de los años de que sufriera algún tipo de enfermedad mental.
+                                </p>
+                                <P>
+                                Desde los años 20, Gibson fue responsable de muchas innovaciones en el diseño de las guitarras, 
+                                y se convirtió en un líder en el mercado de las guitarras tipo "archtop", como el modelo Gibson L5. 
+                                En 1936 presenta la primera guitarra española electrificada "Electric Spanish", la Gibson ES-150, 
+                                reconocida como la primera guitarra eléctrica.
+                                </p>
+                                <div>
+                                   <img src="sggibson.png" class="float-right" width="150">
+                                </div>
+                                <P>
+                                En 1952, Gibson lanza el diseño de la guitarra de cuerpo macizo en colaboración con el popular guitarrista Les Paul.
+                                A finales de la década de 1950 se presentan varios diseños nuevos, incluidas la Gibson Explorer, 
+                                la Flying V y la semi-acústica ES-335 usada comúnmente por Tato Elera y Eric Johnson, y la introducción de 
+                                las pastillas "humbucker". La Les Paul se ofrecía en diferentes modelos (Custom, Standard, Special y Junior).
+                                En 1961, el diseño del cuerpo de la Les Paul cambia, debido al alto coste de elaborar el cuerpo de arce y caoba.
+                                </p>
+                                <P>
+                                El nuevo diseño del cuerpo tomó el nombre de Gibson SG. El modelo Les Paul volvió al catálogo de Gibson en 
+                                1968 debido a la influencia de guitarristas como Eric Clapton, George Harrison, John Lennon, Paul McCartney 
+                                de The Beatles y Peter Green. Más tarde, las Les Paul y SG se volverían muy populares entre los guitarristas
+                                de hard rock y heavy metal. Jimmy Page de Led Zeppelin, Ace Frehley de Kiss, Dickey Betts de The Allman Brothers Band,
+                                Joe Perry y Brad Whitford de Aerosmith, Slash de Guns N' Roses y The Edge de U2 serán conocidos 
+                                por su preferencia por la Les Paul , y Frank Zappa, Angus Young de AC/DC, Tony Iommi de Black Sabbath o 
+                                Glenn Tipton de Judas Priest serán conocidos por preferir la SG.
+                                </p>
+                                <P>
+                                Entre 1974 y 1984, la fábrica de Gibson se muda de Kalamazoo a Nashville, Tennessee. 
+                                Otras plantas de producción son abiertas en Memphis, Tennessee y Bozeman, Montana. 
+                                La fábrica de Memphis sería usada para semi-macizas y tienda de instrumentos personalizados, 
+                                mientras que la de Bozeman se dedicaría a la fabricación de instrumentos acústicos.
+                                </p>
+                                <P>
+                                En 2013 se anunció el cambio de nombre de la empresa, que pasó de ser conocido como Gibson Guitar Corporation 
+                                a solamente Gibson Brands, lo que causó gran revuelo entre la comunidad cibernética y los puristas de la marca.
+                                En 2018 Gibson se declaró en quiebra.
+                                </p>
+                          </article>
+                          <article style="color:#FFFFFF ">
+                                <div>
+                                  <img src="ibanez3.png" class="rounded-circle" alt="ibanez3">
+                                </div>
+                                <h3 style="color:#ADADB2 "><strong>Ibanez</strong></h3>
+                                <p> 
+                                Ibanez es una marca de guitarras (tanto eléctricas como acústicas) y bajos.
+                                El origen de la marca se debe al luthier español Salvador Ibáñez, nacido en Valencia (1854 - 1920),
+                                cuyas excelentes guitarras eran distribuidas en Japón por la compañía de Hoshino Gakki. 
+                                La recesión de 1929 afecta a la firma, que en 1933 cierra. 
+                                El mercado japonés queda desabastecido, por lo que el importador decide en 1935 empezar a fabricar
+                                guitarras españolas por su cuenta y las distribuye con el nombre "Ibanez Salvador". 
+                                Luego cambió el nombre a "Ibanez".
+                                </p>
+                                <div>
+                                  <img src="rgibanez.png" class="float-right" width="150">
+                                </div>
+                                <P>                               
+                                En los años 1960, compró los derechos del nombre Ibanez y empezó a venderlas también en Estados Unidos. 
+                                La mayoría de esas primeras guitarras eran versiones copiadas de otras marcas más famosas. 
+                                Esto fue conocido como el periodo "Lawsuit" (demanda de derechos), por parte de otras compañías. 
+                                Después de este periodo, Ibanez creó diseños propios, como el "Iceman" y la "Ibanez Roadstar". 
+                                Desde ese momento Ibanez comenzó a diseñar guitarras originales, apropiándose del mercado estadounidense.
+                                </p>
+                                <P>
+                                Finalmente, a mediados de los años 80, cuando el interés por las guitarras eléctricas empleadas en el rock aumentó, 
+                                Ibanez consiguió abrir una brecha con respecto a muchos de sus competidores, con nuevas guitarras más especializadas,
+                                ofreciendo nuevas mejoras técnicas, a diferencia de sus competidoras. La compañía llegó a acuerdos con muchas 
+                                estrellas del rock de ese tiempo como Steve Vai, Joe Satriani, Paul Gilbert, Phil Collen, Paul Stanley, John Petrucci 
+                                y Sting, y esto propició otra gran subida en las ventas.
+                                </p>
+                                <P>
+                                Abandonando la estrategia de los diseños “clásicos” de copiado de la guitarra eléctrica, los nuevos modelos 
+                                comenzaron a incorporar elementos más modernos en su diseño, tal como formas radicales del cuerpo, 
+                                cuellos más delgados y diapasones más planos (que permiten tocar más rápidamente), electrónica de alta potencia y 
+                                acabados coloridos. 
+                                Esto condujo a un renombre en aumento con los músicos de heavy metal. La compañía también comenzó un programa 
+                                extenso para que nuevas estrellas de música tales como Paul Gilbert, Steve Vai, Joe Satriani, Noodles (The Offspring),
+                                Sam Totman, Herman Li (ambos de Dragonforce), Munky (Korn), Daron Malakian (System of a Down), Dino Cazares (Fear Factory)
+                                y Mick Thompson (Slipknot), Kiko Loureiro (Angra/Megadeth), Andy Timmons, Paul Waggoner (Between the buried and Me), 
+                                entre otros, usaran sus instrumentos, creando los modelos de la firma hechos a las especificaciones de los mismos.
+                                </p>
+                                <P>
+                                Hoy en día, Ibanez es considerada como una de las mejores y más versátiles compañías de guitarras, con instrumentos 
+                                que van desde guitarras acústicas típicamente estadounidenses, hasta bajos eléctricos.
+                                Utilizando en la gran mayoría de sus guitarras las famosas pastillas DiMarzio (single coil o Humbucker), y sus 
+                                nuevos puentes EDGE y ZR (zero resistance), que les confieren la posibilidad de realizar vibratos agudos. 
+                                Muchos de sus modelos poseen microafinación y fijadores para las cuerdas que le confieren una nitidez y 
+                                precisión importante. Además, también se encarga de vender amplificadores y otros accesorios para guitarras y 
+                                bajos eléctricos.
+                                </p>
+                          </article>
+                   </section>
+              <div>
+              </section>
+            </div>
+          
+            <div class="right">
+              <h2>Un poco de historia</h2>
+              <p>En sus inicios fender implemento su clasico modelo Telecaster luego inserto el clasico Stratocaster, no fue asta la separacion de sus mienbros fundadores que nacio 
+                g&L y comenzaron a copiar los modelos de fender sin mucho exito.</p>
+            </div>
+          </div>
+          <aside>
+            <h4 style="color:#ADADB2 "><strong><?php echo "Los favoritos" ?><strong></h4>
+           <section style="background-color:#697c86">
+            <p class="capitalize">
+            Dentro la amplia gama de modelos y la variedad de fabricantes. hemos presentado los modelos iconicos
+            para cualquier entusiasta de la guitarra, los poderosos y virtuosos sonidos de las super strat, los
+            sonidos sucios melodicos y vibrantes de las Les paul,el sonido rebelde y energico de las SG, los tonos 
+            brillantes y suaves de las Stratocaster hasta los melodicos e historicos sonidos de las Telecaster.
+            Lo importante siempre seran tus ganas de crecer como musico y la diversión!.
+            </p>
+           </section>
+            <div>
+               <img src="guitarrajoe.png" class="rounded-circle" width="200" alt="guitarrajoe">
+               <img src="lespauljames.png" class="rounded" width="200" alt="lespuljames">
+               <img src="lespaulslash.png" class="rounded-circle" width="200" alt="lespaulslash">
+               <img src="stratojimmy.png" class="rounded" width="200" alt="stratojimmy">
+               <img src="sgangus.png" class="rounded-circle" width="200" alt="sgangus">
+               <img src="telebruce.png" class="rounded" width="200" alt="telebruce">
+            </div>
+       </aside>
+          <div style="background-color:#697c86;text-align:center;padding:10px;margin-top:7px;">© The guitar code tu lugar de entretención</div>
+    </body>
+</html>
